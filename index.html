@@ -26,7 +26,26 @@
 	<link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
 	<link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
 
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "info4medwaystaffing@gmail.com",
+        Password: "m4medway#",
+        To: 'info4medwaystaffing@gmail.com',
+        From: "info4medwaystaffing@gmail.com",
+        Subject: "Enquiry from Website",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
 </head>
   <body>
 
@@ -50,11 +69,13 @@
 			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
+
+
+	    <div class="container-fluid">
 			<!-- <a href="#" class="navbar-brand"><img src="/images/logomedway.png"></a> -->
-			<a class="navbar-brand navbar-left" href="index.html">
-				<img src="./images/logomedway.png" alt="logomedway" width="350" height="80"/>
-			  </a>
+			<a class="navbar-brand" href="index.html">
+				<img src="./images/logomedway.png" class="img-fluid img-logo rounded float-left" max-width: alt="logomedway"/>
+		     </a>
 	    	<!-- <a class="navbar-brand" href="index.html">Medway <span>Staffing</span></a> -->
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
@@ -177,7 +198,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Registered Nurses</h3>
-                <p>We provide supportive nursing care services to individuals with functional disabilities. This care aims at reducing or removing barriers of physical or mental disability. Thus, helping them to live independently with dignity.</p>
+                <p class="text-left">We provide supportive nursing care services to individuals with functional disabilities. This care aims at reducing  barriers of physical or mental disability.</p>
               </div>
             </div>      
           </div>
@@ -190,10 +211,9 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Support workers</h3>
-                <p>
-				   We offer nursing care, assistance with meals, help with activities of daily living, and rehabilitation services
-				   according to the care plan under the supervision of a nurse.
-				</p>
+                <p class="text-left">
+				   We offer nursing care, assistance with meals, help with daily activities, and rehabilitation services
+				   according to the care plan under the supervision of a nurse.</p>
               </div>
             </div>    
           </div>
@@ -204,7 +224,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Healthcare assistants</h3>
-                <p>Our specially trained healthcare professionals provide acute care services in hospitals. where the patient receives active but short-term treatment for illness, injury, urgent medical condition, surgical care, critical care, etc.</p>
+                <p class="text-left">Our specially trained healthcare professionals provide acute care services in hospitals ,where the patient receives active but short-term treatment .</p>
               </div>
             </div>      
           </div>
@@ -215,8 +235,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Kitchen assistants</h3>
-                <p>
-					Our professional caregivers provide home healthcare services like medication administration, assistance with activities of daily living, meal assistance in the comfort of one's home.</p>
+                <p class="text-left">Our professional caregivers provide home healthcare services like medication, assistance with daily living activities, meal assistance in the comfort of one's home.</p>
               </div>
             </div>      
           </div>
@@ -337,18 +356,19 @@
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-            <h2>Happy Clients &amp; Feedbacks</h2>
-            <span class="subheading">Testimonies</span>
+            <h2>Ideology at Medway</h2>
+			<span class="subheading">Philosophy</span>
+            <!-- <span class="subheading">Testimonies</span> -->
           </div>
         </div>
         <div class="row ftco-animate">
           <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="carousel-testimony owl-carousel ftco-owl" id="owl-demo">
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Our core values at Medway Care Services are integrity, quality, professionalism.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                     	<div class="pl-3">
@@ -363,12 +383,12 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">These values mean we strive to provide a high quality and responsive client service.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
+		                    <span class="position">Incharge</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -378,12 +398,12 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">We are passionate about the quality of our staff. Our priority is to meet your staffing needs ASAP.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
+		                    <span class="position">Administrator</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -393,12 +413,12 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Keeping the lines of communication open, means we can respond quickly to staffing needs.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
+		                    <span class="position">Care Taker</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -408,7 +428,7 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">We provide a service you can depend,so we are open to negotiation when it comes to tenders.</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
@@ -425,7 +445,7 @@
       </div>
     </section>
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -478,7 +498,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 		
 
     <!-- <section class="ftco-section ftco-no-pb ftco-no-pt">
@@ -526,9 +546,9 @@
 								<h2 class="footer-heading">About us</h2>
 								<p>Medway Care Services is a healthcare recruitment agency that understands the importance of providing a local service.</p>
 								<ul class="ftco-footer-social p-0">
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa-brands fa-twitter"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa-brands fa-facebook"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
 		            </ul>
 							</div>
 							<div class="col-md-8">
@@ -536,12 +556,12 @@
 									<div class="col-md-12 col-lg-10">
 										<div class="row">
 											<div class="col-md-4 mb-md-0 mb-4">
-												<h2 class="footer-heading">Courses</h2>
+												<h2 class="footer-heading">Quick Links</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">Painting</a></li>
-						              <li><a href="#" class="py-1 d-block">Sketch</a></li>
-						              <li><a href="#" class="py-1 d-block">Drawing</a></li>
-						              <li><a href="#" class="py-1 d-block">Sculpture</a></li>
+						              <li><a href="#" class="py-1 d-block">About Us</a></li>
+						              <li><a href="#" class="py-1 d-block">Clients</a></li>
+						              <li><a href="#" class="py-1 d-block">Our Services</a></li>
+						              <li><a href="#" class="py-1 d-block">Contact Us</a></li>
 						            </ul>
 											</div>
 											<div class="col-md-4 mb-md-0 mb-4">
@@ -576,7 +596,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-						<h2 class="footer-heading">Free consultation</h2>
+						<h2 class="footer-heading">Enquiry</h2>
 						<form action="#" class="form-consultation">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
@@ -591,7 +611,8 @@
                 <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-              	<button type="submit" class="form-control submit px-3">Send A Message</button>
+              	<button type="submit" value="Send Email" 
+				  onclick="sendEmail()" class="form-control submit px-3">Send A Message</button>
               </div>
             </form>
 					</div>
@@ -605,6 +626,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
+ 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
