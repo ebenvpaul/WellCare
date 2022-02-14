@@ -13148,11 +13148,64 @@ h2.style-2 {
     z-index: 1001;
 }
 .bg-img-style {
+    /* background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed; */
+    background:url(images/bg_5.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
-    background-position: 50% 0px;
-    top:fixed;
+}
+
+.d-lg-block {
+    display: block!important;
+}
+.d-md-none {
+    display: none!important;
+}
+
+  #wrapper {
+    height: 100%!important;
+    min-height: 100%; 
     
 }
+
+#section-hero-index-landing-product {
+    background: url(../images/bg_5.jpg) top fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: 50% -38.6667px;
+    height: auto;
+    margin:auto 0;
+       /* Height and width fallback for older browsers. */
+       height: 100%;
+       width: 100%;
+   
+       /* Set the height to match that of the viewport. */
+       height: 100vh;
+   
+       /* Set the width to match that of the viewport. */
+       width: 100vw;
+   
+       /* Remove any browser-default margins. */
+       margin: 0;
+}
+.spacer-double {
+    width: 100%;
+    height: 50%;
+    height: 50vh;
+    display: block;
+    clear: both;
+}
+.center {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+}​
+
 .float-whatsapp {
     position: fixed;
     width: 60px;
