@@ -13224,3 +13224,15 @@ h2.style-2 {
     margin-top: 16px;
     color: #fff;
 }
+.bgcolor-primary{
+    background-color: #efa722 !important;
+  }
+.bgcolor-secondary{
+  background-color: #dc1c30 !important;
+}
+.color-primary{
+    color:#efa722 !important;
+  }
+.color-secondary{
+  color:#dc1c30 !important;
+}

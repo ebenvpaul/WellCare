@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/defaultstyle1.css">
+	<link rel="stylesheet" href="css/defaultstyle2.css">
+  <!-- custom background -->
+  <link rel="stylesheet" href="./css/background.css" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,9 +29,7 @@
 	<link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
 	<link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<script src=
-    "https://smtpjs.com/v3/smtp.js">
-  </script>
+	<script src=    "https://smtpjs.com/v3/smtp.js">  </script>
 
   <script type="text/javascript">
     function sendEmail() {
@@ -45,6 +46,15 @@
           alert("mail sent successfully")
         });
     }
+
+	
+        //page-load-modal
+        $(document).ready(function(){
+            $("#pageloadmodal").modal('show');
+        });
+    
+
+       
   </script>
 </head>
   <body>
@@ -147,12 +157,12 @@
 	      </div>
 	    </div>
 	</div> -->
-	
-
+		
+<!-- 
 	<div id="wrapper">
 	
 	 <!-- parallax section -->
-	 <section id="section-hero-index-landing-product" class="full-height" data-speed="3" data-type="background">
+	 <!-- <section id="section-hero-index-landing-product" class="full-height" data-speed="3" data-type="background">
 
 
 		
@@ -170,9 +180,68 @@
 	</div>
 </div>
 
-	</section>
+	</section> -->
 	<!-- parallax section close -->
-</div>
+<!-- </div>  -->
+
+
+  
+        <!--page load modal-->
+		<div id="pageloadmodal" class="modal page-modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="display: none; background-size: cover;">
+			<div class="modal-dialog modal-lg" role="document" style="background-size: cover;">
+					<div class="modal-content" style="background-size: cover;">
+					  <div class="modal-body" style="background-size: cover;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<div class="row" style="background-size: cover;">
+							<div class="col-md-7" style="background-size: cover;"><br><br>
+								<img src="./images/bg_3.jpg" alt="Medicare Staffing Solutions" style="display: block;max-width: 100%;height: auto;">
+							</div>
+							<div class="col-md-5" style="background-size: cover;">
+								<br>
+								<h3 class="modal-title" style="text-align:center;color:#7C2154;"><b>KEEP IN TOUCH</b></h3><br>
+								<form action="#" method="post">
+									<div class="form-group" style="background-size: cover;">
+										<input type="text" class="form-control" placeholder="Name" name="pname" required="">
+									</div>
+									<div class="form-group" style="background-size: cover;">
+										<input type="email" class="form-control" placeholder="Email" name="email" required="">
+									</div>
+									<div class="form-group" style="background-size: cover;">
+										<input type="number" class="form-control" placeholder="Phone Number" name="phone" required="">
+									</div>
+									<div class="form-group" style="background-size: cover;">
+										<input type="text" class="form-control" placeholder="City" name="city" required="">
+									</div>
+									<div class="form-group" style="background-size: cover;">
+										<h6>Type of service needed :</h6>
+										<select id="service" name="service" class="form-control" placeholder="City">
+										  <option value="Long Term Care Homes">Long Term Care Homes</option>
+										  <option value="Retirement Homes">Retirement Homes</option>
+										  <option value="Hospitals">Hospitals</option>
+										  <option value=" Home care">Home care</option>
+										  <option value=" Home care">Other</option>
+										</select>
+									</div>
+									<div class="form-group" style="background-size: cover;">
+										<textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+									</div>
+									<div class="modal-footer" style="background-size: cover;">
+										<!--<button type="button" class="btn btn-warning btn-lg" data-dismiss="modal"> Close </button>-->
+										<button type="submit" name="submitt" class="btn btn-md" style="background-color: #7C2154;color: aliceblue">BOOK NOW</button>
+									</div>
+									<div id="result" style="color: rgb(124, 33, 84); background-size: cover;"></div>
+								</form>
+							</div>
+						</div>
+						<div class="clearfix" style="background-size: cover;"></div>
+					  </div>
+					</div>
+			</div>
+						</div>
+		<!--page load modal-->
+
+
+
 		<section class="intro py-5 bg-light">
 			<div class="container">
 				<div class="row">
@@ -719,8 +788,6 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
 
