@@ -19,51 +19,73 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <div class="wrap">
-			<div class="container">
-				<div class="row justify-content-between">
-						<div class="col">
-							<p class="mb-0 phone"><span class="fa fa-phone"></span> <a href="#">+00 1234 567</a></p>
-						</div>
-						<div class="col d-flex justify-content-end">
-							<div class="social-media">
-				    		<p class="mb-0 d-flex">
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-				    		</p>
-			        </div>
-						</div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">Life<span>coach</span></a>
-	    	<form action="#" class="searchform order-sm-start order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
-        </form>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="success-stories.html" class="nav-link">Stories</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+	<div id="wrapper" style="background-size: cover;">
+        <!-- header begin -->
+        <header class="header-light hdr-transparent shadow-5-strong">
+         <div class="container" style="background-size: cover;">
+             <div class="row" style="background-size: cover;">
+                 <div class="col-md-2 float-left" style="background-size: cover;">
+                     <div class="de-header-flex" style="background-size: cover;">
+                         <!-- logo begin -->
+                         <div id="logo" style="background-size: cover;">
+                             <a class="navbar-brand" href="index.html">
+                                 <img src="./images/logomedway.png" class="img-fluid img-logo rounded float-left"
+                                     max-width: alt="logomedway" />
+                             </a>
+                         </div>
+                         <!-- logo close -->
+     
+     
+                     </div>
+                 </div>
+                 <div class="col-md-10" style="background-size: cover;">
+                     <!-- small button begin -->
+                     <span id="menu-btn" class="unclick"></span>
+                     <!-- small button close -->
+     
+                     <!-- mainmenu begin -->
+                     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light header-fixed shadow-5-strong"
+                         id="ftco-navbar">
+     
+     
+                         <div class="container-fluid">
+                             <!-- <a href="#" class="navbar-brand"><img src="/images/logomedway.png"></a> -->
+                             <a class="navbar-brand" href="index.html">
+                                 <img src="./images/logomedway.png" class="img-fluid img-logo rounded float-left"
+                                     max-width: alt="logomedway" />
+                             </a>
+                             <!-- <a class="navbar-brand" href="index.html">Medway <span>Staffing</span></a> -->
+                             <form action="#" class="searchform order-sm-start order-lg-last">
+                                 <div class="form-group d-flex">
+                                     <input type="text" class="form-control pl-3" placeholder="Search">
+                                     <button type="submit" placeholder="" class="form-control search"><span
+                                             class="fa fa-search"></span></button>
+                                 </div>
+                             </form>
+                             <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                 data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false"
+                                 aria-label="Toggle navigation">
+                                 <span class="fa fa-bars"></span> Menu
+                             </button>
+                             <div class="collapse navbar-collapse" id="ftco-nav">
+                                 <ul class="navbar-nav m-auto">
+                                     <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </nav>
+                     <!-- mainmenu close -->
+                 </div>
+     
+             </div>
+         </div>
+     
+     
+     </header>
+     <!-- header close -->
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -275,6 +297,6 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
-    
+</div>
   </body>
 </html>
