@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Medway Staffing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -17,134 +17,152 @@
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
 
+    <!-- CSS Files================================================= -->
     <style>
-        .Headinglines {
+  .item{
+  opacity:0.4;
+  transition:.4s ease all;
+  margin:0 20px;
+  transform:scale(.8);
+}
+@media(max-width:1000px){
+  .item{margin:0; transform:scale(.9)}
+}
+.active .item{
+  opacity:1;
+  transform:scale(1);
+} 
+body{
+  padding:0;
+  margin:80px 0 0 0;
+  font-family:Merriweather;
+  background:#f0e8d5;
+}
 
-            font-size: 60px;
-            font-weight: 400;
-            background-color: red;
-            background-image: linear-gradient(50deg,DARKGREEN,DARKRED, DARKGREEN);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            background-size: 100%;
-            background-repeat: repeat;
-            /* Use the text as a mask for the background. */
-            /* This will show the gradient as a text color rather than element bg. */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-        }
+.owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
 
-        @keyframes animated-gradient {
-            to {
-                background-position: 200%;
-            }
-        }
+.inner{position:absolute; bottom:30px; left:0; right:0; text-align:center;}
+.inner a{color:#fff; text-decoration:none; border-bottom:2px solid rgba(255,255,255,0.5); transition:.3s ease border-color}
+.inner a:hover{border-color:#fff;}
+.black .inner a{color:#000; border-color:rgba(0,0,0,0.4)}
+.black .inner a:hover{border-color:#000;}
 
-        /* CSS */
-        .button-75 {
-            align-items: center;
-            background-image: linear-gradient(135deg, darkred 50%, #fc894d);
-            border: 0;
-            border-radius: 10px;
-            box-sizing: border-box;
-            color: #fff;
-            cursor: pointer;
-            display:inline-flex;
-            flex-direction: column;
-            font-family: "Codec cold", sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            height: 54px;
-            justify-content: center;
-            letter-spacing: .4px;
-            line-height: 1;
-            max-width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 3px;
-            text-decoration: none;
-            text-transform: uppercase;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
+/* .owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; left:50%; margin-left:-4%; pointer-events: none; background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/aett_logo_slider.png) no-repeat center 50%; background-size:100% auto;
+} */
 
-        .button-75:active {
-            outline: 0;
-        }
+.owl-controls{position:absolute; margin-top:300px;}
 
-        .button-75:hover {
-            outline: 0;
-        }
+	/* CSS */
+	.button-75  {
+		align-items: center;
+		background-image: linear-gradient(135deg, darkred 50%, #fc894d);
+		border: 0;
+		border-radius: 10px;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		display:inline-flex;
+		flex-direction: column;
+		font-family: "Codec cold", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		height: 54px;
+		justify-content: center;
+		letter-spacing: .4px;
+		line-height: 1;
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 3px;
+		text-decoration: none;
+		text-transform: uppercase;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
 
-        .button-75 span {
-            transition: all 200ms;
-        }
+	.button-75:active {
+		outline: 0;
+	}
 
-        .button-75:hover span {
-            transform: scale(.9);
-            opacity: .75;
-        }
+	.button-75:hover {
+		outline: 0;
+	}
 
-        @media screen and (max-width: 991px) {
-            .button-75 {
-                font-size: 15px;
-                height: 50px;
-            }
+	.button-75 span {
+		transition: all 200ms;
+	}
 
-            .button-75 span {
-                line-height: 50px;
-            }
-        }
-    </style>
-    <!-- CSS Files
-    ================================================== -->
+	.button-75:hover span {
+		transform: scale(.9);
+		opacity: .75;
+	}
 
+	@media screen and (max-width: 991px) {
+		.button-75 {
+			font-size: 15px;
+			height: 50px;
+		}
+
+		.button-75 span {
+			line-height: 50px;
+		}
+	}
+     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logo.png">
-    <link id="bootstrap" href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link id="bootstrap-grid" href="./DefaultFiles/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
-    <link id="bootstrap-reboot" href="./DefaultFiles/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/jpreloader.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/animate.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/plugin.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/owl.theme.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/defaultstyle.css" type="text/css">
 
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="styles/bootstrap.css" type="text/css">
+
+
+    <link rel="stylesheet" href="styles/animate.css" type="text/css">
+    <link rel="stylesheet" href="styles/plugin.css" type="text/css">
+
+    <link rel="stylesheet" href="styles/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="styles/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="styles/owl.transitions.css" type="text/css">
+    
+    <link rel="stylesheet" href="styles/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/defaultstyle.css" type="text/css">
+
+
+     <!-- Bootstrap -->
+    <!-- <link id="bootstrap-grid" href="./bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link id="bootstrap-reboot" rel="stylesheet" href="./bootstrap/dist/css/bootstrap-reboot.min.css" type="text/css">
+    <link id="bootstrap" rel="stylesheet" href="./bootstrap/dist/css/bootstrap-grid.min.css" type="text/css"> -->
 
     <!-- custom background -->
-    <link rel="stylesheet" href="./DefaultFiles/bg.css" type="text/css">
+    <link rel="stylesheet" href="styles/bg.css" type="text/css">
 
     <!-- color scheme -->
-    <link rel="stylesheet" href="./DefaultFiles/yellow.css" type="text/css" id="colors">
-    <link rel="stylesheet" href="./DefaultFiles/color.css" type="text/css">
+    <link rel="stylesheet" href="styles/yellow.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="styles/color.css" type="text/css">
 
     <!-- load fonts -->
-    <link rel="stylesheet" href="./DefaultFiles/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/style(1).css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/style(2).css" type="text/css">
+    <link rel="stylesheet" href="styles/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="styles/style(1).css" type="text/css">
+    <link rel="stylesheet" href="styles/style(2).css" type="text/css">
 
     <!-- revolution slider -->
-    <link rel="stylesheet" href="./DefaultFiles/settings.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/rev-settings.css" type="text/css">
+    <link rel="stylesheet" href="styles/settings.css" type="text/css">
+    <link rel="stylesheet" href="styles/rev-settings.css" type="text/css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./DefaultFiles/custom-garden.css" type="text/css">
-    <link rel="stylesheet" href="./DefaultFiles/googleapis.css" type="text/css">
+    <link rel="stylesheet" href="styles/googleapis.css" type="text/css">
 
-    <script type="text/javascript" src="./DefaultFiles/jquery.js"></script>
+    <script type="text/javascript" src="styles/jquery.js"></script>
 
-    <script type="text/javascript" charset="UTF-8" src="./DefaultFiles/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="./DefaultFiles/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="styles/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="styles/util.js"></script>
+  
+
 </head>
 
 <body id="homepage" class="de_light" style="display: block;">
@@ -429,15 +447,20 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-testimonial-coworking" data-bgimage="url(./images/Bg/bg19.jpg)" class="text-light"
+           <section id="section-testimonial-coworking">
+           <!-- data-bgimage="url(./images/Bg/bg19.jpg)" class="text-light"
                 data-stellar-background-ratio=".1"
-                style="background: url(./images/Bg/bg19.jpg);max-height:720px;background-repeat: no-repeat;">
-                <div class="container" style="background-size: cover;">
+                style="background: url(./images/Bg/bg19.jpg);height:500px;max-height:720px;background-repeat: no-repeat;"> -->
+                <!--  <div class="container" style="background-size: cover;">
                     <div class="row" style="background-size: cover;">
 
                         <div class="col-md-8 offset-md-2" style="background-size: cover;">
+<!-- ================== -->
 
-                            <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp owl-loaded"
+
+
+<!-- ======================= -->
+                            <!-- <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp owl-loaded"
                                 style="visibility: hidden; animation-name: none; background-size: cover;">
                         
 
@@ -528,19 +551,69 @@
                                             aria-label="Previous">‹</span></button><button type="button"
                                         role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
                                 </div>
-                                <div class="owl-dots" style="background-size: cover;visibility: hidden;"><button role="button"
+                                <div class="owl-dots" style="background-size: cover;"><button role="button"
                                         class="owl-dot active"><span></span></button><button role="button"
                                         class="owl-dot"><span></span></button><button role="button"
                                         class="owl-dot"><span></span></button></div>
-                            </div>
+                            </div> -->
 
-                        </div>
+                        <!-- </div>
 
                     </div>
+                </div> -->
+                <div class="owl-carousel">
+                    <div class="item">
+                      <a href="#">
+                      <img src="images/Service/bg19.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Compassionate and Professional</a>
+                      </div>
+                      </a>
+                  </div>
+                      <div class="item black">
+                      <a href="#">
+                      <img src="images/Service/bg23.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Dedicated</a>
+                      </div>
+                      </a>
+                  </div>
+                      <div class="item">
+                      <a href="#">
+                      <img src="images/Service/bg27.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Caring</a>
+                      </div>
+                      </a>
+                  </div>
+                      <div class="item black">
+                      <a href="#">
+                      <img src="images/Service/bg20.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Committed</a>
+                      </div>
+                      </a>
+                  </div>
+                      <div class="item">
+                      <a href="#">
+                      <img src="images/Service/bg21.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Helping Hand</a>
+                      </div>
+                      </a>
+                  </div>
+                   <div class="item black">
+                      <a href="#">
+                      <img src="images/Service/bg22.jpg" alt="" />
+                      <div class="inner">
+                        <a href="#">Support</a>
+                      </div>
+                      </a>
+                  </div>
                 </div>
             </section>
 
-
+           
 
 
 
@@ -624,28 +697,8 @@
             </section>
             <!-- section close -->
             <!-- partial:index.partial.html -->
-            <style>
-                .float {
-                    position: fixed;
-                    width: 60px;
-                    height: 60px;
-                    bottom: 40px;
-                    right: 40px;
-                    background-color: #25d366;
-                    color: #FFF;
-                    border-radius: 50px;
-                    text-align: center;
-                    font-size: 30px;
-                    box-shadow: 2px 2px 3px #999;
-                    z-index: 100;
-                }
-
-                .my-float {
-                    margin-top: 16px;
-                    color: #fff;
-                }
-            </style>
-            <link rel="stylesheet" href="./DefaultFiles/font-awesome.min.css"><a
+        
+            <link rel="stylesheet" href="./styles/font-awesome.min.css"><a
                 href="https://api.whatsapp.com/send?phone=+1(250)327-8762&amp;text=Welcome%20to%20Medway%21%20."
                 class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
             <!-- partial -->
@@ -667,7 +720,7 @@
                                             <span><strong>For Inquire:</strong>+1 2267218779,+1(250) 327-8762</span>
                                             <span><strong>Careers:</strong>+1 2267218779</span>
                                             <span><strong>Email:</strong><a href="mailto:info@medwaystaffing.com">info@medwaystaffing.com</a></span>
-                                            <span><strong>Web:</strong><a href="http://www.medwaystaffingsolutions.com">medwaystaffing.com</a></span>
+                                            <span><strong>Web:</strong><a href="https://www.medwaystaffingsolutions.com">medwaystaffing.com</a></span>
                                         </address>
                                     </div>
                                 </div>
@@ -693,7 +746,7 @@
                                 <div class="row" style="background-size: cover;">
                                     <div class="col-md-6" style="background-size: cover;">© Copyright 2022 - DESIGNED BY
                                         <a
-                                            href="http://www.Medwaystaffingsolutions.com"><span>MEDWAY</span></a>.
+                                            href="https://www.Medwaystaffingsolutions.com"><span>MEDWAY</span></a>.
                                         ALL RIGHTS RESERVED </div>
                                     <div class="col-md-6 text-right" style="background-size: cover;">
                                         <div class="social-icons" style="background-size: cover;"><a href="#"
@@ -711,41 +764,41 @@
         </div>
     </div>
     <!-- Javascript Files==================================================-->
-        <script src="./DefaultFiles/jquery.min.js"></script>
-        <script src="./DefaultFiles/jpreLoader.js"></script>
-        <script src="./DefaultFiles/bootstrap.min.js"></script>
-        <script src="./DefaultFiles/jquery.isotope.min.js"></script>
-        <script src="./DefaultFiles/easing.js"></script>
-        <script src="./DefaultFiles/jquery.flexslider-min.js"></script>
-        <script src="./DefaultFiles/jquery.scrollto.js"></script>
-        <script src="./DefaultFiles/owl.carousel.js"></script>
-        <script src="./DefaultFiles/jquery.countTo.js"></script>
-        <script src="./DefaultFiles/classie.js"></script>
-        <script src="./DefaultFiles/video.resize.js"></script>
-        <script src="./DefaultFiles/validation.js"></script>
-        <script src="./DefaultFiles/js"></script>
-        <script src="./DefaultFiles/map.js"></script>
-        <script src="./DefaultFiles/wow.min.js"></script>
-        <script src="./DefaultFiles/jquery.magnific-popup.min.js"></script>
-        <script src="./DefaultFiles/jquery.stellar.min.js"></script>
-        <script src="./DefaultFiles/enquire.min.js"></script>
-        <script src="./DefaultFiles/designesia.js"></script>
+        <!-- <script src="./styles/jquery.min.js"></script> -->
+        <!-- <script src="./styles/jpreLoader.js"></script> -->
+        <!-- <script src="./styles/bootstrap.min.js"></script> -->
+        <!-- <script src="./styles/jquery.isotope.min.js"></script> -->
+        <!-- <script src="./styles/easing.js"></script> -->
+        <!-- <script src="./styles/jquery.flexslider-min.js"></script> -->
+        <!-- <script src="./styles/jquery.scrollto.js"></script> -->
+        <script src="owlcarousel/src/js/owl.carousel.js"></script>
+        <!-- <script src="./styles/jquery.countTo.js"></script> -->
+        <!-- <script src="./styles/classie.js"></script> -->
+        <!-- <script src="./styles/video.resize.js"></script> -->
+        <!-- <script src="./styles/validation.js"></script> -->
+        <!-- <script src="./styles/js"></script> -->
+        <!-- <script src="./styles/map.js"></script> -->
+        <script src="styles/wow.min.js"></script>
+        <script src="styles/jquery.magnific-popup.min.js"></script>
+        <script src="styles/jquery.stellar.min.js"></script>
+        <script src="styles/enquire.min.js"></script>
+        <script src="styles/designesia.js"></script>
         <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <!-- <script src="js/jquery-migrate-3.0.1.min.js"></script> -->
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.animateNumber.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <!-- <script src="js/jquery.easing.1.3.js"></script> -->
+        <!-- <script src="js/jquery.waypoints.min.js"></script> -->
+        <!-- <script src="js/jquery.stellar.min.js"></script> -->
+        <!-- <script src="js/jquery.animateNumber.min.js"></script> -->
+        <script src="owlcarousel/src/js/owl.carousel.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/scrollax.min.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/scrokllax.min.js"></script> -->
+        <!-- <script src="js/main.js"></script> -->
         <!-- SLIDER REVOLUTION SCRIPTS
-            <script src="./DefaultFiles/jquery.themepunch.plugins.min.js"></script>
-            <script src="./DefaultFiles/jquery.themepunch.revolution.min.js"></script>
-            <script src="./DefaultFiles/typed.js"></script>
+            <script src="./styles/jquery.themepunch.plugins.min.js"></script>
+            <script src="./styles/jquery.themepunch.revolution.min.js"></script>
+            <script src="./styles/typed.js"></script>
             <script>$(function () {
 
                     // jquery typed plugin
@@ -793,34 +846,52 @@
                     </script>
             
             
-            <script crossorigin="anonymous|use-credentials" src="./DefaultFiles/tcc_l.combined.1.0.6.min.js"></script><span>
-                <script crossorigin="anonymous|use-credentials" src="./DefaultFiles/6932" type="text/javascript"></script>
+            <script crossorigin="anonymous|use-credentials" src="./styles/tcc_l.combined.1.0.6.min.js"></script><span>
+                <script crossorigin="anonymous|use-credentials" src="./styles/6932" type="text/javascript"></script>
             </span><span>
-                <script  crossorigin="anonymous|use-credentials" src="./DefaultFiles/getjs" type="text/javascript"></script>
+                <script  crossorigin="anonymous|use-credentials" src="./styles/getjs" type="text/javascript"></script>
             </span> -->
 
 <script>
-    $(document).ready(function() {
-    $("#testimonial-carousel-single").owlCarousel({
-      items :4, 
-      margin: 10,
-      loop: true,
-      autoplay: true,
-      smartSpeed: 1000,
-      center:true,
-      responsive:{
+$('.owl-carousel').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    lazyLoad: true,
+    nav:true,
+  responsive:{
         0:{
-            items:1
+            items:1,
+            stagePadding: 60
         },
         600:{
-            items:3
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
         }
-      },
-      onInitialized:setDots,
-      onChanged:setDots
-    });
-  });
-
+    }
+})
 
 </script>
            
