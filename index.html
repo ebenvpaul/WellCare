@@ -653,7 +653,7 @@ body{
                         <div class="col-md-8 offset-md-2 wow fadeInLeft"
                             style="visibility: hidden; animation-name: none; background-size: cover;">
                             <div id="result1" style="color: red; background-size: cover;"></div>
-                            <form name="contactForm" id="contact_form" method="post" action="default.html">
+                            <form name="contactForm" id="contact_form" action="#">
                                 <div class="row" style="background-size: cover;">
                                     <div class="col-md-6" style="background-size: cover;">
                                         <div id="name_error" class="error" style="background-size: cover;">Please enter
@@ -662,7 +662,12 @@ body{
                                             <input type="text" name="fname" id="fname" class="form-control"
                                                 placeholder="First Name*" required="">
                                         </div>
-
+                                        <div id="name_error" class="error" style="background-size: cover;">Please enter
+                                            your last name.</div>
+                                        <div style="background-size: cover;">
+                                            <input type="text" name="lname" id="lname" class="form-control"
+                                                placeholder="Last Name">
+                                        </div>
                                         <div id="email_error" class="error" style="background-size: cover;">Please enter
                                             your valid E-mail ID.</div>
                                         <div style="background-size: cover;">
@@ -676,19 +681,14 @@ body{
                                             <input type="text" name="phone" id="phone" class="form-control"
                                                 placeholder="Your Phone*" required="">
                                         </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6" style="background-size: cover;">
                                         <div id="phone_error" class="error" style="background-size: cover;">Please enter
                                             your zip code.</div>
                                         <div style="background-size: cover;">
                                             <input type="text" name="zipcode" id="zipcode" class="form-control"
                                                 placeholder="Zipcode">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6" style="background-size: cover;">
-                                        <div id="name_error" class="error" style="background-size: cover;">Please enter
-                                            your last name.</div>
-                                        <div style="background-size: cover;">
-                                            <input type="text" name="lname" id="lname" class="form-control"
-                                                placeholder="Last Name">
                                         </div>
                                         <div id="message_error" class="error" style="background-size: cover;">Please
                                             enter your message.</div>
@@ -700,8 +700,8 @@ body{
 
                                     <div class="col-md-12 text-center" style="background-size: cover;">
                                         <p id="submit">
-                                            <button type="submit" name="submit" class="btn btn-lg bgcolor-primary"
-                                                style="color: aliceblue">Submit Form</button>
+                                            <button name="submit" class="btn btn-lg bgcolor-primary"
+                                                style="color: aliceblue" onclick="sendEmail()">Submit Form</button>
                                         </p>
                                         <div id="mail_success" class="success" style="background-size: cover;">Your
                                             message has been sent successfully.</div>
@@ -797,6 +797,31 @@ body{
         <!-- <script src="./styles/validation.js"></script> -->
         <!-- <script src="./styles/js"></script> -->
         <!-- <script src="./styles/map.js"></script> -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+            console.log("Called MailSent");
+			Email.send({
+				Host: "mail.medwaystaffing.com",
+				Username : "info@medwaystaffing.com",
+				Password : "info@medwaystaffing",
+				From :document.getElementById("email").value ,
+                To : "info@medwaystaffing.com",
+				Subject : "Enquiry From medwaystaffing.com",
+				Body :"Greetings,"+ "\n" + "This mail has been generated through  medwaystaffing.com."+ "\n" + 
+                "Enquiry sent by:" +document.getElementById("fname").value +" "+document.getElementById("lname").value + "\n" 
+                +"Contact No.: "+ document.getElementById("phone").value + "\n" 
+                +"Enquiry Content : "+document.getElementById("message").value 
+			})
+			.then(function(message){
+                console.log(message)
+				alert(message)
+			});
+            // var url=window.location.href.split('?')[0];
+            // location.replace(url);
+
+		}
+	</script>
         <script src="styles/wow.min.js"></script>
         <script src="styles/jquery.magnific-popup.min.js"></script>
         <script src="styles/jquery.stellar.min.js"></script>
