@@ -564,9 +564,16 @@ body{
                 <div class="owl-carousel">
                     <div class="item">
                       <a href="#">
+                      <!-- <img src="images/Bg/bg19.jpg"alt="" /> -->
                       <img src="images/Service/bg19.jpg" alt="" />
                       <div class="inner">
-                        <a href="#">Compassionate and Professional</a>
+                        <blockquote class="customer-text2">
+                            Team of professionals have helped us to improve many aspects of our life, <br>
+                            social life included. The personal assistent works hard, we do not need to <br>
+                            follow her around, she knows what to do. <br>
+                            </blockquote>
+                            <a class="customer-text1" href="#"> <span class="name">Sandra Jay, Customer</span></a>
+                      
                       </div>
                       </a>
                   </div>
@@ -574,7 +581,14 @@ body{
                       <a href="#">
                       <img src="images/Service/bg23.jpg" alt="" />
                       <div class="inner">
-                        <a href="#">Dedicated</a>
+                        <blockquote class="customer-text2">
+
+                            I don’t think that I will ever be able to find the words to <br>
+                            express my deep gratitude  to you for all that you have <br>
+                            done for me and continue to do.You are, quite literally, my lifesaver. <br>
+                          </blockquote>
+                          <a class="customer-text1"  href="#">    <span class="name">Kevin Anderson, Customer</span></a>
+                        
                       </div>
                       </a>
                   </div>
@@ -582,7 +596,14 @@ body{
                       <a href="#">
                       <img src="images/Service/bg27.jpg" alt="" />
                       <div class="inner">
-                        <a href="#">Caring</a>
+                        <blockquote class="customer-text2">
+
+                            I cannot thank you enough for your understanding and support  <br>
+                            through some difficult times.It is refreshing to work with <br>
+                             someone who provides the utmost in professionalism and kindness. <br>
+                          </blockquote>
+                          <a class="customer-text1"  href="#"> <span class="customer-text1 name">Robert Lian, Customer</span></a>
+                        
                       </div>
                       </a>
                   </div>
@@ -590,35 +611,33 @@ body{
                       <a href="#">
                       <img src="images/Service/bg20.jpg" alt="" />
                       <div class="inner">
-                        <a href="#">Committed</a>
+                        <blockquote class="customer-text2">
+                            I want to personally thank you for taking care of my mom.  <br>
+                            I am impressed with each of your caregivers! Every one of them  <br>
+                            is compassionate and skilled professional. <br>
+                           </blockquote>
+                           <a class="customer-text1"  href="#"><span class="customer-text1 name">Katie Elliott, Customer</span></a>
+    
                       </div>
                       </a>
                   </div>
-                      <div class="item">
-                      <a href="#">
-                      <img src="images/Service/bg21.jpg" alt="" />
-                      <div class="inner">
-                        <a href="#">Helping Hand</a>
-                      </div>
-                      </a>
-                  </div>
+
                    <div class="item black">
                       <a href="#">
                       <img src="images/Service/bg22.jpg" alt="" />
                       <div class="inner">
-                        <a href="#">Support</a>
+                        <blockquote class="customer-text2">
+
+                            Medway’s PSWs are compassionate and also professional. They have
+                            assisted us on multiple occasions on short notices. And they have never
+                            disappointed. Their 24x7 support is highly commendable.
+                        </blockquote>
+                        <a  class="customer-text1"  href="#"> <span class="customer-text1 name">Renee Sherman, Customer</span></a>
                       </div>
                       </a>
                   </div>
                 </div>
             </section>
-
-           
-
-
-
-
-
 
 
             <!-- section begin -->
@@ -771,7 +790,7 @@ body{
         <!-- <script src="./styles/easing.js"></script> -->
         <!-- <script src="./styles/jquery.flexslider-min.js"></script> -->
         <!-- <script src="./styles/jquery.scrollto.js"></script> -->
-        <script src="owlcarousel/src/js/owl.carousel.js"></script>
+       
         <!-- <script src="./styles/jquery.countTo.js"></script> -->
         <!-- <script src="./styles/classie.js"></script> -->
         <!-- <script src="./styles/video.resize.js"></script> -->
@@ -792,6 +811,8 @@ body{
         <!-- <script src="js/jquery.stellar.min.js"></script> -->
         <!-- <script src="js/jquery.animateNumber.min.js"></script> -->
         <script src="owlcarousel/src/js/owl.carousel.js"></script>
+        <script src="owlcarousel/src/js/owl.autoplay.js"></script>
+        <script src="owlcarousel/src/js/owl.autorefresh.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!-- <script src="js/scrokllax.min.js"></script> -->
         <!-- <script src="js/main.js"></script> -->
@@ -861,6 +882,12 @@ $('.owl-carousel').owlCarousel({
     items:1,
     lazyLoad: true,
     nav:true,
+
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+
   responsive:{
         0:{
             items:1,
@@ -892,6 +919,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
 
 </script>
            
